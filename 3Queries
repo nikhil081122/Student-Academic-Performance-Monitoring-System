@@ -15,3 +15,6 @@ FROM Students s
 JOIN Enrollments e ON s.student_id = e.student_id
 JOIN Courses c ON e.course_id = c.course_id
 JOIN Attendance a ON e.enrollment_id = a.enrollment_id;
+
+
+CALL CalculateGPA(1);
